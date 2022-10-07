@@ -1,0 +1,26 @@
+* No Scheduling
+Run       Phase                 Step          Time (arb.units)
+Run1      Convergence           68            68.0
+Run2      Convergence           67            67.0
+Run3      Convergence           69            69.0
+Run4      Convergence           73            73.0
+Run5      Convergence           66            66.0
+AVERAGE   Convergence           68.6          68.6
+
+* Scheduling
+Run       Phase                 Step          Time (arb.units)
+Run1      Stage1,Finish         35             0.35
+Run2      Stage1,Finish         47             0.47
+Run3      Stage1,Finish         61             0.61
+Run4      Stage1,Finish         90             0.90
+Run5      Stage1,Finish         45             0.45
+AVERAGE   Stage1,Finish         55.2           0.552
+AVER/SUCC Stage1,Finish         69.5           0.695
+Run2      Stage2,Convergence     6             6.0
+Run3      Stage2,Convergence     5             5.0
+Run4      Stage2,Convergence     5             5.0
+Run5      Stage2,Convergence     5             5.0
+AVERAGE   Stage2,Convergence     5.25          5.25
+AVERAGE   Total,Convergence     74.75          5.945
+
+* Note: AVER/SUCC is AVERAGE divided by 80% (success rate), since one of the five runs (Run1) is terminated.
